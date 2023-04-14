@@ -65,8 +65,7 @@
       "repository": "snap1_repository",
       "snapshot": "snapshot1",
       "body": {
-        "indices": "nyc_taxis",
-        "storage_type": "remote_snapshot"
+        "indices": "nyc_taxis"
       },
       "wait-for-completion": true
     },
