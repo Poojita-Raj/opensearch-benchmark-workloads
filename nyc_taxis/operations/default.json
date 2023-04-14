@@ -62,16 +62,13 @@
     {
       "name": "restore-snapshot",
       "operation-type": "restore-snapshot",
-      "repository": "test-repository",
-      "snapshot": "{{ snapshot_name | default('test-snapshot') }}",
+      "repository": "snap1_repository",
+      "snapshot": "snapshot1",
       "body": {
-        "indices": ["nyc_taxis"],
+        "indices": "nyc_taxis",
         "storage_type": "remote_snapshot"
       },
-      "wait-for-completion": true,
-      "request-params": {
-        "request_timeout": 3600
-      }
+      "wait-for-completion": true
     },
     {
       "name": "default",
